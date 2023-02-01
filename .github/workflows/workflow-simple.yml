@@ -1,0 +1,13 @@
+name: the-power-workflow-simple
+on:
+ issue_comment:
+   types: [created]
+jobs:
+  blank:
+    runs-on: ubuntu-latest
+    environment: environment_1
+    steps:
+      - name: MyCommands
+        run: |
+          echo Hello
+          echo World
